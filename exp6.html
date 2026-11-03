@@ -1,0 +1,21 @@
+<!-- 6. Use mapping technique, to map a particular part of image and move the control corresponding to that area. For e.g., in an image, if there are bat, ball, stump etc. When you click stump control should move to a file call St.htm. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment 6</title>
+</head>
+<body>
+    <h1>Image Mapping</h1>
+    <p>Click on the bat, ball or stumps in the image.</p>
+
+    <img src="sports.svg" width="600" height="300" usemap="#cricketmap" alt="Cricket items">
+
+    <map name="cricketmap">
+        <area shape="rect" coords="55,55,175,245" href="bat.html" alt="Bat">
+        <area shape="circle" coords="285,205,35" href="ball.html" alt="Ball">
+        <area shape="rect" coords="405,65,555,245" href="st.html" alt="Stumps">
+    </map>
+
+    <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>
